@@ -1,0 +1,60 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{url}
+\urlstyle{same}
+\usepackage{hyperref} 
+\usepackage[round]{natbib}
+\setlength{\parskip}{1em}
+\title{Nach dem Ritual - Wohin rituelle Gegenstände gehen}
+\author{Silvia Götti}
+
+\begin{document}
+\begin{titlepage}
+
+\centering
+	\includegraphics[width=0.2\textwidth]{logo_unibern@2x.png}
+	\vfill
+	{\scshape\LARGE Institut Name Universität Bern \par}
+	\vspace{1cm}	
+	{\huge\bfseries Titel\par}
+	\vspace{2cm}
+	{\Large Silvia Götti\par}	
+	\vspace{1cm}
+	{\scshape Essay in welchem Fach\par}
+	{Studiengang, ?. Semester\par}
+	\vspace{1.5cm}
+	
+	{\scshape Eingereicht bei\par}
+	Professor Name
+
+	
+	{\today\par}
+	\vfill
+	Adress + Email
+
+
+\end{titlepage}
+
+\tableofcontents
+
+\section{first section}
+
+This is how to cite at the end of the sentence \citep[S.23]{richter_altsteinzeit_2018}.
+
+This is how \citet{berg_weltkulturerbe_2018} cite mid-text.
+
+\newpage
+
+\section{Bibliografie}
+\bibliographystyle{biblio/relwi}
+%\bibliographystyle{biblio/PA}
+\renewcommand{\harvardurl}[1]{\url{#1}}
+\bibliography{biblio/biblio}
+
+\end{document}
