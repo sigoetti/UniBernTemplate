@@ -11,7 +11,7 @@
 \usepackage{hyperref} 
 \usepackage[round]{natbib}
 \setlength{\parskip}{1em}
-\title{Nach dem Ritual - Wohin rituelle Gegenstände gehen}
+\usepackage{todonotes}
 \author{Silvia Götti}
 
 \begin{document}
@@ -41,13 +41,19 @@
 
 \end{titlepage}
 
+\pagenumbering{roman}
 \tableofcontents
+
+\newpage
+\pagenumbering{arabic}
 
 \section{first section}
 
 This is how to cite at the end of the sentence \citep[S.23]{richter_altsteinzeit_2018}.
 
 This is how \citet{berg_weltkulturerbe_2018} cite mid-text.
+
+this is how to do a \todo{note}
 
 \newpage
 
