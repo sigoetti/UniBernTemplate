@@ -12,6 +12,11 @@
 \usepackage[round]{natbib}
 \setlength{\parskip}{1em}
 \usepackage{todonotes}
+\usepackage{placeins}
+\usepackage[final]{pdfpages}
+\usepackage{epigraph}
+\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt}
 \author{Silvia Götti}
 
 \begin{document}
@@ -24,7 +29,7 @@
 	\vspace{1cm}	
 	{\huge\bfseries Titel\par}
 	\vspace{2cm}
-	{\Large Silvia Götti\par}	
+	{\Large Mein Name\par}	
 	\vspace{1cm}
 	{\scshape Essay in welchem Fach\par}
 	{Studiengang, ?. Semester\par}
@@ -36,7 +41,7 @@
 	
 	{\today\par}
 	\vfill
-	Adress + Email
+	Adresse + Email
 
 
 \end{titlepage}
@@ -49,11 +54,15 @@
 
 \section{first section}
 
+\epigraph{\textit{This is how to make an entry quote at the start of a chapter}}{(quote by)}
+
 This is how to cite at the end of the sentence \citep[S.23]{richter_altsteinzeit_2018}.
 
 This is how \citet{berg_weltkulturerbe_2018} cite mid-text.
 
 this is how to do a \todo{note}
+
+\FloatBarrier keeps images from floating somewhere where they shouldn't
 
 \newpage
 
@@ -62,5 +71,8 @@ this is how to do a \todo{note}
 %\bibliographystyle{biblio/PA}
 \renewcommand{\harvardurl}[1]{\url{#1}}
 \bibliography{biblio/biblio}
+adding a pdf report
+
+%\includepdf[pages=-]{report.pdf}
 
 \end{document}
